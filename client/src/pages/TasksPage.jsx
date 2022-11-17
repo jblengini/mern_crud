@@ -11,7 +11,8 @@ function TasksPage() {
 
   function renderMain() {
     if (tasks.length === 0) return <h1>No tasks yet</h1>;
-    return tasks.map((task) => <TaskCard task={task} key={task.id} />);
+    console.log(tasks);
+       return tasks.map((task) => <TaskCard task={task} key={task.id} />);
   }
 
   return (

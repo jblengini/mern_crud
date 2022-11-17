@@ -6,6 +6,7 @@ export const getTasks = async (req, res) => {
       "SELECT * FROM tasks ORDER BY createAt ASC"
     );
     res.json(result);
+    //console.log(res.json(result));
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
